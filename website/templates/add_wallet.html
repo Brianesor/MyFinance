@@ -1,0 +1,22 @@
+{% extends "base.html" %} {% block title %}Add Wallet{% endblock %}
+
+
+{% block content %}
+<div class="form-add_wallet">
+<form method="POST">
+  <h3 align="center">Add a new wallet</h3>
+  <div class="form-group">
+    <label for="wallet_name">wallet name</label>
+    <input
+      type="text"
+      class="form-control"
+      id="wallet_name"
+      name="wallet_name"
+      placeholder="Enter wallet name"
+    />
+  </div>
+  <br />
+  <button type="submit" class="btn btn-primary">Add Wallet</button>
+</form>
+</div>
+{% endblock %}

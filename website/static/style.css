@@ -1,0 +1,40 @@
+.container{
+	/*border: 1px black solid;*/
+	padding: 10px 15px 0px 15px;;
+}
+.container h3{
+	/*border: 1px black solid;*/
+	padding: 25px 0;
+}
+
+.form-login{
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.form-add_wallet{
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.btn{
+	padding: 10px 20px;
+	margin: 0px 0px 0px 160px;
+}
+
+form {
+  
+}
+
+.form-group > label {
+  
+}
+.col-sm-6 {
+    flex: 0 0 25%;
+    max-width: 50%;
+    padding-bottom: 30px;
+}

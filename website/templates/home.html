@@ -1,0 +1,30 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %}
+
+
+{% block content %}
+<h3 align="center">Your wallets</h3>
+<div class="row">
+	{% for wallet in user.wallet %}
+	<div class="col-sm-6 mb-3 mb-sm-0">
+		<div class="card" style="width: 18rem;">
+  			<div class="card-body">
+			    <h5 class="card-title">{{ wallet.wallet_name }}</h5>
+			    <h6 class="card-subtitle mb-2 text-body-secondary">0,00€</h6>
+			    <p class="card-text">Wallet info.</p>
+			    <a href="#" class="card-link">Card link</a>
+			    <button type="button" class="close" onClick="deleteWallet({{ wallet.id }})">
+      				<span aria-hidden="true">&times;</span>
+    			</button>
+  			</div>
+		</div>
+	</div>
+	{% endfor %}
+	<div class="col-sm-6">
+		<div class="card" style="width: 18rem;">
+  			<div class="card-body">
+				<a href="/add_wallet" class="card-link">Add wallet</a>
+  			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}
