@@ -42,3 +42,8 @@ def delete_wallet():
 			db.session.commit()
 
 	return jsonify({})
+
+@views.route('/wallet', methods=['GET', 'POST'])
+@login_required
+def wallet():
+	return render_template("wallet.html", user=current_user)

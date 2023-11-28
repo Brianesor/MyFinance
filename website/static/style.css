@@ -2,6 +2,7 @@
 	/*border: 1px black solid;*/
 	padding: 10px 15px 0px 15px;;
 }
+
 .container h3{
 	/*border: 1px black solid;*/
 	padding: 25px 0;
@@ -11,7 +12,6 @@
 	width: 400px;
 	margin-left: auto;
 	margin-right: auto;
-
 }
 
 .form-add_wallet{
@@ -33,8 +33,105 @@ form {
 .form-group > label {
   
 }
+
 .col-sm-6 {
     flex: 0 0 25%;
     max-width: 50%;
     padding-bottom: 30px;
+}
+
+/*Wallet css*/
+
+.div-wallet{
+	max-width: 1024px;
+    padding: 24px 48px;
+    margin: auto;
+    position: relative;
+}
+
+.wallet-name{
+	font-size: 24px;
+}
+.top-wallet-value{
+	display: flex;
+    align-items: flex-end;
+	height: 44px;
+}
+.top-wallet-date{
+	height: 16px;
+	font-size: 12px;
+	line-height: 16px;
+}
+.wallet-value{
+	width: 138.688px;
+	height: 44px;
+	font-size: 36px;
+	line-height:44px;
+}
+.wallet-value-indicator{
+    width: 166.25px;
+	height: 40px;
+
+}
+.wallet-value-indicator-pourcentage{
+	font-size: 16px;
+	line-height: 24px;
+	width: 64px;
+	height: 40px;
+}
+.core-wallet{
+	display: flex;
+}
+.wallet-graph{
+	flex-grow: 2;
+    max-width: 66%;
+	height: 526px;
+}
+.wallet-perf{
+	flex-grow: 1;
+	height: 526px
+}
+.wallet-perf-div{
+	min-width: 255px;
+    max-width: 324px;
+    padding: 16px;
+    margin-left: auto;
+    margin-bottom: 16px;
+    border-radius: 12px;
+    border: 1px solid rgb(218, 220, 224)
+}
+.wallet-perf-div-title{
+	font-family: "Google Sans",Roboto,Arial,sans-serif;
+    line-height: 1.5rem;
+    font-size: 1.125rem;
+    letter-spacing: 0;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+.wallet-perf-div-indicator{
+	display: flex;
+}
+.wallet-perf-div-indicator-left{
+	flex: 1;
+    margin-right: 12px;
+}
+.wallet-perf-div-indicator-right{
+	flex: 1;
+}
+.wallet-perf-div-indicator-div{
+	background-color: rgb(230,244,234);
+    color: rgb(19,115,51);
+    letter-spacing: .00625em;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5rem;
+    padding: 8px;
+    border-radius: 8px;
+    line-break: anywhere;
+}
+.stock-div-title{
+	display: flex;
+    align-items: center;
+    height: 24px;
 }
